@@ -7,7 +7,7 @@
 ![](https://img.shields.io/github/contributors/overextended/ox_inventory?logo=github)
 ![](https://img.shields.io/github/v/release/overextended/ox_inventory?logo=github)
 
-## 📸 ตัวอย่างการใช้งาน
+## 📸 Preview Screenshot
 
 ![Inventory Screenshot](images/preview.png)
 
