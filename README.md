@@ -7,6 +7,10 @@
 ![](https://img.shields.io/github/contributors/overextended/ox_inventory?logo=github)
 ![](https://img.shields.io/github/v/release/overextended/ox_inventory?logo=github)
 
+## 📸 ตัวอย่างการใช้งาน
+
+![Inventory Screenshot](images/preview.png)
+
 ## ⚠️ ข้อกำหนดสำคัญ
 
 **ต้องใช้งานร่วมกับ [ox_lib v3.13.0](https://github.com/overextended/ox_lib/releases/tag/v3.13.0)**
