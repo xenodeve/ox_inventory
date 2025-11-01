@@ -56,11 +56,12 @@ https://overextended.dev/ox_inventory
 
 ## ลิขสิทธิ์
 
-ลิขสิทธิ์ © 2024 Overextended <https://github.com/overextended>
+ลิขสิทธิ์ © 2024 [Overextended](https://github.com/overextended)
 
 โปรแกรมนี้เป็นซอฟต์แวร์เสรี คุณสามารถเผยแพร่ต่อและ/หรือแก้ไขภายใต้เงื่อนไขของ GNU General Public License ตามที่เผยแพร่โดย Free Software Foundation ไม่ว่าจะเป็นเวอร์ชัน 3 ของใบอนุญาต หรือเวอร์ชันที่ใหม่กว่า (ตามตัวเลือกของคุณ)
 
 โปรแกรมนี้ถูกเผยแพร่โดยหวังว่าจะมีประโยชน์ แต่ไม่มีการรับประกันใดๆ แม้แต่การรับประกันโดยนัยของการค้าหรือความเหมาะสมสำหรับวัตถุประสงค์เฉพาะ ดูรายละเอียดเพิ่มเติมได้ที่ GNU General Public License
 
-คุณควรได้รับสำเนาของ GNU General Public License พร้อมกับโปรแกรมนี้ หากไม่ได้รับ โปรดดูที่ <https://www.gnu.org/licenses/>
+คุณควรได้รับสำเนาของ GNU General Public License พร้อมกับโปรแกรมนี้ 
+หากไม่ได้รับ [โปรดดูที่นี่](https://www.gnu.org/licenses/)
 
