@@ -1,65 +1,72 @@
 # ox_inventory
 
-A complete inventory system for FiveM, implementing items, weapons, shops, and more without any strict framework dependency.
+ระบบคลังไอเทมที่สมบูรณ์สำหรับ FiveM รองรับไอเทม อาวุธ ร้านค้า และอื่นๆ โดยไม่ต้องผูกกับเฟรมเวิร์กใดเฟรมเวิร์กหนึ่ง
 
 ![](https://img.shields.io/github/downloads/overextended/ox_inventory/total?logo=github)
 ![](https://img.shields.io/github/downloads/overextended/ox_inventory/latest/total?logo=github)
 ![](https://img.shields.io/github/contributors/overextended/ox_inventory?logo=github)
 ![](https://img.shields.io/github/v/release/overextended/ox_inventory?logo=github)
 
-## 📚 Documentation
+## ⚠️ ข้อกำหนดสำคัญ
+
+**ทรัพยากรนี้ต้องใช้งานร่วมกับ ox_lib เวอร์ชัน 3.13.0 เท่านั้น**
+
+� ดาวน์โหลด ox_lib v3.13.0: https://github.com/overextended/ox_lib/releases/tag/v3.13.0
+
+## 📚 เอกสารประกอบ
 
 https://overextended.dev/ox_inventory
 
-## 💾 Download
+## 💾 ดาวน์โหลด
 
 https://github.com/overextended/ox_inventory/releases/latest/download/ox_inventory.zip
 
-## Supported frameworks
+## เฟรมเวิร์กที่รองรับ
 
-We do not guarantee compatibility or support for third-party resources.
+เราไม่รับประกันความเข้ากันได้หรือการสนับสนุนสำหรับทรัพยากรของบุคคลที่สาม
 
 - [ox_core](https://github.com/overextended/ox_core)
 - [esx](https://github.com/esx-framework/esx_core)
 - [qbox](https://github.com/Qbox-project/qbx_core)
 - [nd_core](https://github.com/ND-Framework/ND_Core)
 
-## ✨ Features
+## ✨ คุณสมบัติ
 
-- Server-side security ensures interactions with items, shops, and stashes are all validated.
-- Logging for important events, such as purchases, item movement, and item creation or removal.
-- Supports player-owned vehicles, licenses, and group systems implemented by frameworks.
-- Fully synchronised, allowing multiple players to [access the same inventory](https://user-images.githubusercontent.com/65407488/230926091-c0033732-d293-48c9-9d62-6f6ae0a8a488.mp4).
+- ความปลอดภัยฝั่งเซิร์ฟเวอร์ที่ตรวจสอบการโต้ตอบกับไอเทม ร้านค้า และที่เก็บของทั้งหมด
+- บันทึกเหตุการณ์สำคัญ เช่น การซื้อ การเคลื่อนย้ายไอเทม และการสร้างหรือลบไอเทม
+- รองรับยานพาหนะของผู้เล่น ใบอนุญาต และระบบกลุ่มที่ใช้งานโดยเฟรมเวิร์ก
+- ซิงโครไนซ์อย่างสมบูรณ์ ทำให้ผู้เล่นหลายคนสามารถ[เข้าถึงคลังเดียวกันได้](https://user-images.githubusercontent.com/65407488/230926091-c0033732-d293-48c9-9d62-6f6ae0a8a488.mp4)
 
-### Items
+### ไอเทม
 
-- Inventory items are stored per-slot, with customisable metadata to support item uniqueness.
-- Overrides default weapon-system with weapons as items.
-- Weapon attachments and ammo system, including special ammo types.
-- Durability, allowing items to be depleted or removed overtime.
-- Internal item system provides secure and easy handling for item use effects.
-- Compatibility with 3rd party framework item registration.
+- ไอเทมในคลังจะถูกเก็บแยกตามช่อง พร้อมเมทาดาทาที่ปรับแต่งได้เพื่อรองรับความเป็นเอกลักษณ์ของไอเทม
+- แทนที่ระบบอาวุธเริ่มต้นด้วยอาวุธในรูปแบบไอเทม
+- ระบบอุปกรณ์เสริมและกระสุนอาวุธ รวมถึงกระสุนประเภทพิเศษ
+- ความทนทาน ทำให้ไอเทมสามารถหมดหรือถูกลบออกเมื่อเวลาผ่านไป
+- ระบบไอเทมภายในที่ให้การจัดการที่ปลอดภัยและง่ายดายสำหรับผลการใช้งานไอเทม
+- เข้ากันได้กับการลงทะเบียนไอเทมของเฟรมเวิร์กบุคคลที่สาม
 
-### Shops
+### ร้านค้า
 
-- Restricted access based on groups and licenses.
-- Support different currency for items (black money, poker chips, etc).
+- จำกัดการเข้าถึงตามกลุ่มและใบอนุญาต
+- รองรับสกุลเงินที่แตกต่างกันสำหรับไอเทม (เงินมืด ชิปโป๊กเกอร์ ฯลฯ)
 
-### Stashes
+### ที่เก็บของ
 
-- Personal stashes, linking a stash with a specific identifier or creating per-player instances.
-- Restricted access based on groups.
-- Registration of new stashes from any resource.
-- Containers allow access to stashes when using an item, like a paperbag or backpack.
-- Access gloveboxes and trunks for any vehicle.
-- Random item generation inside dumpsters and unowned vehicles.
+- ที่เก็บของส่วนตัว เชื่อมโยงที่เก็บของกับตัวระบุเฉพาะหรือสร้างแบบต่อผู้เล่น
+- จำกัดการเข้าถึงตามกลุ่ม
+- ลงทะเบียนที่เก็บของใหม่จากทรัพยากรใดก็ได้
+- คอนเทนเนอร์ทำให้สามารถเข้าถึงที่เก็บของเมื่อใช้ไอเทม เช่น ถุงกระดาษหรือเป้สะพายหลัง
+- เข้าถึงช่องเก็บของในรถและกระโปรงท้ายสำหรับยานพาหนะใดก็ได้
+- สร้างไอเทมแบบสุ่มภายในถังขยะและยานพาหนะที่ไม่มีเจ้าของ
 
-## Copyright
+## ลิขสิทธิ์
 
-Copyright © 2024 Overextended <https://github.com/overextended>
+ลิขสิทธิ์ © 2024 Overextended <https://github.com/overextended>
 
-This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+โปรแกรมนี้เป็นซอฟต์แวร์เสรี คุณสามารถเผยแพร่ต่อและ/หรือแก้ไขภายใต้เงื่อนไขของ GNU General Public License ตามที่เผยแพร่โดย Free Software Foundation ไม่ว่าจะเป็นเวอร์ชัน 3 ของใบอนุญาต หรือเวอร์ชันที่ใหม่กว่า (ตามตัวเลือกของคุณ)
 
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+โปรแกรมนี้ถูกเผยแพร่โดยหวังว่าจะมีประโยชน์ แต่ไม่มีการรับประกันใดๆ แม้แต่การรับประกันโดยนัยของการค้าหรือความเหมาะสมสำหรับวัตถุประสงค์เฉพาะ ดูรายละเอียดเพิ่มเติมได้ที่ GNU General Public License
 
-You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
+คุณควรได้รับสำเนาของ GNU General Public License พร้อมกับโปรแกรมนี้ หากไม่ได้รับ โปรดดูที่ <https://www.gnu.org/licenses/>
+
